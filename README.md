@@ -1,302 +1,330 @@
-# Sollar Installer
-
 <div align="center">
+
+# ☀️ SOLLAR INSTALLER
 
 ### Intelligent Solar Lead Generation & Installer Management Platform
 
-**Discover qualified homeowners • Score solar opportunities • Connect installers • Track leads**
+**Discover • Qualify • Match • Connect • Track**
 
-[Live Demo](YOUR_RENDER_URL_HERE) · [GitHub Repository](https://github.com/jasminefloraa/Sollar_installer)
+<br>
+
+<a href="YOUR_RENDER_URL_HERE">
+  <img src="https://img.shields.io/badge/☀%20LIVE%20DEMO-F4C430?style=for-the-badge&logoColor=0B1426" alt="Live Demo"/>
+</a>
+&nbsp;
+<a href="https://github.com/jasminefloraa/Sollar_installer">
+  <img src="https://img.shields.io/badge/GITHUB-0B1426?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+</a>
+
+<br><br>
+
+<img src="https://img.shields.io/badge/Python-0B1426?style=flat-square&logo=python&logoColor=F4C430"/>
+<img src="https://img.shields.io/badge/Flask-0B1426?style=flat-square&logo=flask&logoColor=white"/>
+<img src="https://img.shields.io/badge/Socket.IO-0B1426?style=flat-square&logo=socketdotio&logoColor=22C55E"/>
+<img src="https://img.shields.io/badge/SQLite-0B1426?style=flat-square&logo=sqlite&logoColor=F4C430"/>
+<img src="https://img.shields.io/badge/Render-0B1426?style=flat-square&logo=render&logoColor=22C55E"/>
 
 </div>
 
 ---
 
-## Overview
+## ⚡ What is Sollar Installer?
 
-**Sollar Installer** is a full-stack solar lead generation and installer management platform designed to connect high-potential homeowners with solar installation companies.
+**Sollar Installer** is a full-stack solar lead generation and installer management platform designed to connect **qualified homeowners with solar installers**.
 
-The platform transforms a homeowner's solar assessment into a structured, scored lead that installers can discover, claim, manage, and follow through a centralized dashboard.
+Instead of simply passing raw leads to installers, the platform evaluates homeowner information, calculates solar potential, estimates savings, scores the lead, and makes qualified opportunities available through an installer dashboard.
 
-Instead of manually handling leads, the system provides an end-to-end workflow:
-
-**Homeowner Assessment → Solar Estimate → Lead Creation → Lead Scoring → Installer Discovery → Lead Claiming → Contact Unlock → Status Tracking**
+> **The goal:** turn a homeowner's solar interest into an actionable, qualified installer opportunity.
 
 ---
 
-## Problem
+## 🎯 The Problem
 
-Solar installers often spend significant time identifying potential customers, evaluating lead quality, following up with homeowners, and maintaining lead pipelines.
+Traditional solar lead workflows often involve:
 
-Sollar Installer addresses this by providing a centralized system that:
+* Manual lead collection
+* Unqualified prospects
+* Slow lead distribution
+* No centralized installer dashboard
+* Limited lead visibility
+* Manual follow-up
+* Poor tracking of lead progress
 
-* Collects homeowner solar assessment data
-* Calculates estimated solar potential
-* Assigns a lead score
-* Categorizes lead potential
-* Connects qualified leads with installers
-* Provides installer dashboards
-* Tracks lead status and notifications
-* Supports real-time application updates
+### Sollar Installer solves this with one connected workflow:
+
+<div align="center">
+
+**Homeowner Assessment**
+
+⬇
+
+**Solar Potential Analysis**
+
+⬇
+
+**Lead Scoring**
+
+⬇
+
+**Installer Matching**
+
+⬇
+
+**Lead Claim**
+
+⬇
+
+**Contact Unlock**
+
+⬇
+
+**Status Tracking**
+
+</div>
 
 ---
 
-## Key Features
+# ✨ Key Features
 
-### Homeowner Assessment
+<table>
+<tr>
+<td width="50%">
 
-Homeowners can submit information about their property and energy usage to generate a personalized solar opportunity estimate.
+### 🏠 Homeowner Assessment
 
-The system evaluates factors such as:
+Collect homeowner information and property details through a guided solar assessment flow.
 
-* Location
-* Property information
-* Electricity usage
-* Roof information
-* Solar suitability
+</td>
 
-### Intelligent Lead Scoring
+<td width="50%">
 
-Each homeowner is converted into a structured lead with:
+### ☀️ Solar Estimation
 
-* Lead score
-* Potential category
-* Estimated system size
-* Estimated annual savings
-* Payback period
-* Estimated CO₂ reduction
+Calculate estimated system size, annual savings, payback period and environmental impact.
 
-Example:
+</td>
+</tr>
 
-```text
-Lead ID:              SL-2026-000002
-Location:             Dallas, TX 75001
-Potential:            High Potential
-Lead Score:           100
-Estimated System:     7.7 kW
-Annual Savings:       $2,160
-Payback Period:       7 years
-CO₂ Reduction:        4.2 t/year
+<tr>
+<td>
+
+### 📊 Intelligent Lead Scoring
+
+Evaluate leads using property and solar-potential data and classify opportunities based on quality.
+
+</td>
+
+<td>
+
+### 🔎 Installer Dashboard
+
+Installers can browse qualified leads and view important opportunity information from one dashboard.
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+### 🔐 Claim & Contact Unlock
+
+Installers can claim leads and unlock customer contact information through the workflow.
+
+</td>
+
+<td>
+
+### 🔄 Lead Status Tracking
+
+Track opportunities through different stages such as new, claimed, contacted and converted.
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+### ⚡ Real-Time Updates
+
+Socket.IO enables real-time dashboard updates and notifications.
+
+</td>
+
+<td>
+
+### 📈 Analytics
+
+Monitor lead activity, installer performance and platform-level metrics.
+
+</td>
+</tr>
+</table>
+
+---
+
+# 🧠 How It Works
+
+```mermaid
+flowchart LR
+
+A[Homeowner] --> B[Solar Assessment]
+
+B --> C[Solar Analysis]
+
+C --> D[Lead Scoring]
+
+D --> E[Qualified Lead]
+
+E --> F[Installer Dashboard]
+
+F --> G[Claim Lead]
+
+G --> H[Unlock Contact]
+
+H --> I[Contact Homeowner]
+
+I --> J[Update Lead Status]
 ```
 
-### Installer Dashboard
+---
 
-Installers can:
+# 🚀 Core Platform
 
-* View available leads
-* Filter and evaluate opportunities
-* Claim leads
-* Unlock homeowner contact information
-* Update lead status
-* Monitor notifications
-* Track their pipeline
+<div align="center">
 
-### Admin Dashboard
+| Module              | Purpose                          |
+| ------------------- | -------------------------------- |
+| 🏠 Homeowner        | Submit solar requirements        |
+| ☀️ Solar Engine     | Estimate solar potential         |
+| 📊 Lead Engine      | Score and classify opportunities |
+| 🏢 Installer Portal | Discover qualified leads         |
+| 🔐 Authentication   | Secure role-based access         |
+| 🔄 Real-Time Layer  | Live notifications and updates   |
+| 📈 Analytics        | Platform and lead insights       |
 
-Administrators can monitor:
-
-* Lead pipeline
-* Installer accounts
-* Lead assignments
-* Platform analytics
-* Lead status
-* Notifications
-
-### Real-Time Updates
-
-The platform uses **Flask-SocketIO** for real-time communication and dashboard updates.
-
-This allows important lead and notification events to be reflected without requiring constant manual page refreshes.
+</div>
 
 ---
 
-## Application Workflow
-
-```text
-                    HOMEOWNER
-                        │
-                        ▼
-              Solar Assessment
-                        │
-                        ▼
-                Solar Estimation
-                        │
-                        ▼
-                 Lead Generation
-                        │
-                        ▼
-                 Lead Scoring
-                        │
-                        ▼
-              ┌─────────────────┐
-              │   Lead Pipeline │
-              └─────────────────┘
-                        │
-             ┌──────────┴──────────┐
-             ▼                     ▼
-        Installer A           Installer B
-             │                     │
-             └──────────┬──────────┘
-                        ▼
-                  Claim Lead
-                        │
-                        ▼
-                Unlock Contact
-                        │
-                        ▼
-                 Follow-up
-                        │
-                        ▼
-                 Status Update
-```
-
----
-
-## Technology Stack
+# 🛠️ Technology Stack
 
 ### Backend
 
-* Python
-* Flask
-* Flask-SQLAlchemy
-* Flask-SocketIO
-* SQLAlchemy
-* PyJWT
-* Flask-CORS
-* Gunicorn
-
-### Frontend
-
-* HTML5
-* CSS3
-* JavaScript
-* Responsive dashboard UI
+<img src="https://img.shields.io/badge/Python-0B1426?style=for-the-badge&logo=python&logoColor=F4C430"/>
+<img src="https://img.shields.io/badge/Flask-0B1426?style=for-the-badge&logo=flask&logoColor=white"/>
+<img src="https://img.shields.io/badge/SQLAlchemy-0B1426?style=for-the-badge&logo=sqlalchemy&logoColor=22C55E"/>
+<img src="https://img.shields.io/badge/Flask--SocketIO-0B1426?style=for-the-badge&logo=socketdotio&logoColor=22C55E"/>
 
 ### Database
 
-* SQLite
-* SQLAlchemy ORM
-
-### Real-Time Communication
-
-* Socket.IO
-* WebSocket / polling support
-
-### Deployment
-
-* Render
-* GitHub
-
----
-
-## API Architecture
-
-The backend follows a REST-style API structure.
+<img src="https://img.shields.io/badge/SQLite-0B1426?style=for-the-badge&logo=sqlite&logoColor=F4C430"/>
 
 ### Authentication
 
-```text
-POST /api/auth/login
-```
+<img src="https://img.shields.io/badge/JWT-0B1426?style=for-the-badge&logo=jsonwebtokens&logoColor=F4C430"/>
+<img src="https://img.shields.io/badge/Role--Based%20Access-0B1426?style=for-the-badge&logoColor=white"/>
 
-### Homeowner
+### Deployment
 
-```text
-POST /api/homeowner/assessment
-```
+<img src="https://img.shields.io/badge/Render-0B1426?style=for-the-badge&logo=render&logoColor=22C55E"/>
+<img src="https://img.shields.io/badge/Gunicorn-0B1426?style=for-the-badge&logoColor=F4C430"/>
 
-### Leads
+---
 
-```text
-GET    /api/leads
-PATCH  /api/leads/<id>
-POST   /api/leads/<id>/claim
-POST   /api/leads/<id>/assign
-DELETE /api/leads/<id>
-```
-
-### Installers
+# 📐 System Architecture
 
 ```text
-GET /api/installers
-```
-
-### Notifications
-
-```text
-GET   /api/notifications
-PATCH /api/notifications/<id>/read
-```
-
-### Analytics
-
-```text
-GET /api/analytics/dashboard
-```
-
-### Health Check
-
-```text
-GET /api/health
-```
-
-### Real-Time
-
-```text
-/socket.io/
+                         ┌──────────────────────┐
+                         │      Homeowner       │
+                         └──────────┬───────────┘
+                                    │
+                                    ▼
+                         ┌──────────────────────┐
+                         │ Solar Assessment API │
+                         └──────────┬───────────┘
+                                    │
+                                    ▼
+                         ┌──────────────────────┐
+                         │  Solar Calculation   │
+                         │    & Lead Scoring    │
+                         └──────────┬───────────┘
+                                    │
+                                    ▼
+                         ┌──────────────────────┐
+                         │     Lead Database    │
+                         └──────────┬───────────┘
+                                    │
+                                    ▼
+                         ┌──────────────────────┐
+                         │  Installer Dashboard │
+                         └──────────┬───────────┘
+                                    │
+                      ┌─────────────┴─────────────┐
+                      ▼                           ▼
+               Claim Lead                 Lead Analytics
+                      │
+                      ▼
+               Unlock Contact
+                      │
+                      ▼
+               Update Status
 ```
 
 ---
 
-## Authentication
+# 🔑 Demo Accounts
 
-The application uses JWT-based authentication for protected API operations.
-
-Different user roles can access different parts of the platform.
-
-### Demo Accounts
-
-#### Installer
+### Installer
 
 ```text
 Email:    demo@installer.com
 Password: Installer@123
 ```
 
-#### Admin
+### Admin
 
 ```text
 Email:    admin@sunlead.com
 Password: Admin@123
 ```
 
-> These credentials are provided for demonstration purposes.
+> These credentials are provided for demonstration purposes only.
 
 ---
 
-## Project Structure
+# 📊 Example Qualified Lead
 
 ```text
-Sollar_installer/
-│
-├── app.py
-│
-├── static/
-│   └── index.html
-│
-├── instance/
-│   └── sunlead.db
-│
-├── requirements.txt
-│
-└── .gitignore
+Lead ID              SL-2026-000002
+Location             Dallas, TX 75001
+Potential            High Potential
+Lead Score           100
+Estimated System     7.7 kW
+Annual Savings       $2,160
+Estimated Payback    7 years
+CO₂ Reduction        4.2 t/year
 ```
-
-The local SQLite database is intentionally excluded from version control.
 
 ---
 
-## Running Locally
+# 🔌 API Highlights
+
+| Method  | Endpoint                    | Purpose                        |
+| ------- | --------------------------- | ------------------------------ |
+| `POST`  | `/api/auth/login`           | Authenticate users             |
+| `POST`  | `/api/homeowner/assessment` | Submit homeowner assessment    |
+| `GET`   | `/api/leads`                | Retrieve available leads       |
+| `PATCH` | `/api/leads/<id>`           | Update lead information        |
+| `POST`  | `/api/leads/<id>/claim`     | Claim a lead                   |
+| `POST`  | `/api/leads/<id>/assign`    | Assign lead to installer       |
+| `GET`   | `/api/installers`           | Retrieve installer information |
+| `GET`   | `/api/notifications`        | Retrieve notifications         |
+| `GET`   | `/api/analytics`            | Retrieve analytics             |
+| `GET`   | `/health`                   | Application health check       |
+
+---
+
+# 💻 Run Locally
 
 ### 1. Clone the repository
 
@@ -307,31 +335,37 @@ cd Sollar_installer
 
 ### 2. Create a virtual environment
 
-Windows:
-
 ```bash
 python -m venv venv
 ```
 
-Activate it:
+### 3. Activate it
+
+**Windows**
 
 ```bash
 venv\Scripts\activate
 ```
 
-### 3. Install dependencies
+**macOS / Linux**
+
+```bash
+source venv/bin/activate
+```
+
+### 4. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Start the application
+### 5. Start the application
 
 ```bash
 python app.py
 ```
 
-The application will be available at:
+### 6. Open the application
 
 ```text
 http://127.0.0.1:5000
@@ -339,9 +373,9 @@ http://127.0.0.1:5000
 
 ---
 
-## Deployment
+# ☁️ Deployment
 
-The application is configured for deployment on Render.
+The application is configured for deployment on **Render**.
 
 ### Build Command
 
@@ -355,620 +389,128 @@ pip install -r requirements.txt
 gunicorn --threads 100 app:app
 ```
 
-The production server runs the Flask application through Gunicorn while supporting the application's Socket.IO configuration.
-
----
-
-## Example Lead
-
-A sample high-potential lead generated by the platform:
-
-| Attribute      | Value          |
-| -------------- | -------------- |
-| Lead ID        | SL-2026-000002 |
-| Location       | Dallas, TX     |
-| ZIP Code       | 75001          |
-| Potential      | High Potential |
-| Score          | 100            |
-| System Size    | 7.7 kW         |
-| Annual Savings | $2,160         |
-| Payback        | 7 years        |
-| CO₂ Reduction  | 4.2 t/year     |
-
----
-
-## Why This Project?
-
-Sollar Installer demonstrates practical full-stack development rather than being only a static interface.
-
-The project combines:
-
-* REST API development
-* Authentication
-* Database modeling
-* CRUD operations
-* Role-based workflows
-* Real-time communication
-* Business logic
-* Lead scoring
-* Dashboard development
-* Deployment
-* Git/GitHub workflow
-
----
-
-## Engineering Highlights
-
-### Full-Stack Architecture
-
-The application connects a browser-based dashboard with a Flask backend and relational data layer.
-
-### API-First Design
-
-Core functionality is exposed through structured REST endpoints, making the system easier to extend or integrate with external services.
-
-### Real-Time Communication
-
-Flask-SocketIO enables real-time events for notifications and application updates.
-
-### Role-Based Workflow
-
-The system separates homeowner, installer, and administrator workflows to reflect a realistic business platform.
-
-### Lead Lifecycle Management
-
-Leads move through a defined lifecycle:
+### Deployment Stack
 
 ```text
-New
- ↓
-Available
- ↓
-Claimed
- ↓
-Contact Unlocked
- ↓
-Follow-up
- ↓
-Converted / Closed
+GitHub
+   │
+   ▼
+Render
+   │
+   ▼
+Gunicorn
+   │
+   ▼
+Flask Application
+   │
+   ├── REST APIs
+   ├── Socket.IO
+   ├── Authentication
+   ├── Lead Management
+   └── Analytics
 ```
 
 ---
 
-## Future Improvements
-
-Potential future enhancements include:
-
-* PostgreSQL production database
-* Persistent cloud storage
-* Email automation
-* SMS notifications
-* Advanced lead scoring models
-* Installer matching based on location
-* Google Maps integration
-* Payment and subscription functionality
-* Advanced analytics
-* Automated follow-up campaigns
-* Production-grade authentication and security hardening
-
----
-
-## Project Status
-
-**Status:** Deployed / Deployment in Progress
-
-The application is actively being developed and prepared for production deployment.
-
----
-
-## Author
-
-### Jasmine Flora J
-
-B.Tech Computer Science & Engineering
-Manakula Vinayagar Institute of Technology
-
-GitHub:
-https://github.com/jasminefloraa
-
-LinkedIn:
-https://www.linkedin.com/in/jasmine-flora/
-
----
-
-<div align="center">
-
-### Sollar Installer
-
-**Turning solar interest into qualified opportunities.**
-
-Built with Python, Flask, SQLAlchemy, JavaScript and Socket.IO.
-
-</div>
-# Sollar Installer
-
-<div align="center">
-
-### Intelligent Solar Lead Generation & Installer Management Platform
-
-**Discover qualified homeowners • Score solar opportunities • Connect installers • Track leads**
-
-[Live Demo](YOUR_RENDER_URL_HERE) · [GitHub Repository](https://github.com/jasminefloraa/Sollar_installer)
-
-</div>
-
----
-
-## Overview
-
-**Sollar Installer** is a full-stack solar lead generation and installer management platform designed to connect high-potential homeowners with solar installation companies.
-
-The platform transforms a homeowner's solar assessment into a structured, scored lead that installers can discover, claim, manage, and follow through a centralized dashboard.
-
-Instead of manually handling leads, the system provides an end-to-end workflow:
-
-**Homeowner Assessment → Solar Estimate → Lead Creation → Lead Scoring → Installer Discovery → Lead Claiming → Contact Unlock → Status Tracking**
-
----
-
-## Problem
-
-Solar installers often spend significant time identifying potential customers, evaluating lead quality, following up with homeowners, and maintaining lead pipelines.
-
-Sollar Installer addresses this by providing a centralized system that:
-
-* Collects homeowner solar assessment data
-* Calculates estimated solar potential
-* Assigns a lead score
-* Categorizes lead potential
-* Connects qualified leads with installers
-* Provides installer dashboards
-* Tracks lead status and notifications
-* Supports real-time application updates
-
----
-
-## Key Features
-
-### Homeowner Assessment
-
-Homeowners can submit information about their property and energy usage to generate a personalized solar opportunity estimate.
-
-The system evaluates factors such as:
-
-* Location
-* Property information
-* Electricity usage
-* Roof information
-* Solar suitability
-
-### Intelligent Lead Scoring
-
-Each homeowner is converted into a structured lead with:
-
-* Lead score
-* Potential category
-* Estimated system size
-* Estimated annual savings
-* Payback period
-* Estimated CO₂ reduction
-
-Example:
-
-```text
-Lead ID:              SL-2026-000002
-Location:             Dallas, TX 75001
-Potential:            High Potential
-Lead Score:           100
-Estimated System:     7.7 kW
-Annual Savings:       $2,160
-Payback Period:       7 years
-CO₂ Reduction:        4.2 t/year
-```
-
-### Installer Dashboard
-
-Installers can:
-
-* View available leads
-* Filter and evaluate opportunities
-* Claim leads
-* Unlock homeowner contact information
-* Update lead status
-* Monitor notifications
-* Track their pipeline
-
-### Admin Dashboard
-
-Administrators can monitor:
-
-* Lead pipeline
-* Installer accounts
-* Lead assignments
-* Platform analytics
-* Lead status
-* Notifications
-
-### Real-Time Updates
-
-The platform uses **Flask-SocketIO** for real-time communication and dashboard updates.
-
-This allows important lead and notification events to be reflected without requiring constant manual page refreshes.
-
----
-
-## Application Workflow
-
-```text
-                    HOMEOWNER
-                        │
-                        ▼
-              Solar Assessment
-                        │
-                        ▼
-                Solar Estimation
-                        │
-                        ▼
-                 Lead Generation
-                        │
-                        ▼
-                 Lead Scoring
-                        │
-                        ▼
-              ┌─────────────────┐
-              │   Lead Pipeline │
-              └─────────────────┘
-                        │
-             ┌──────────┴──────────┐
-             ▼                     ▼
-        Installer A           Installer B
-             │                     │
-             └──────────┬──────────┘
-                        ▼
-                  Claim Lead
-                        │
-                        ▼
-                Unlock Contact
-                        │
-                        ▼
-                 Follow-up
-                        │
-                        ▼
-                 Status Update
-```
-
----
-
-## Technology Stack
-
-### Backend
-
-* Python
-* Flask
-* Flask-SQLAlchemy
-* Flask-SocketIO
-* SQLAlchemy
-* PyJWT
-* Flask-CORS
-* Gunicorn
-
-### Frontend
-
-* HTML5
-* CSS3
-* JavaScript
-* Responsive dashboard UI
-
-### Database
-
-* SQLite
-* SQLAlchemy ORM
-
-### Real-Time Communication
-
-* Socket.IO
-* WebSocket / polling support
-
-### Deployment
-
-* Render
-* GitHub
-
----
-
-## API Architecture
-
-The backend follows a REST-style API structure.
-
-### Authentication
-
-```text
-POST /api/auth/login
-```
-
-### Homeowner
-
-```text
-POST /api/homeowner/assessment
-```
-
-### Leads
-
-```text
-GET    /api/leads
-PATCH  /api/leads/<id>
-POST   /api/leads/<id>/claim
-POST   /api/leads/<id>/assign
-DELETE /api/leads/<id>
-```
-
-### Installers
-
-```text
-GET /api/installers
-```
-
-### Notifications
-
-```text
-GET   /api/notifications
-PATCH /api/notifications/<id>/read
-```
-
-### Analytics
-
-```text
-GET /api/analytics/dashboard
-```
-
-### Health Check
-
-```text
-GET /api/health
-```
-
-### Real-Time
-
-```text
-/socket.io/
-```
-
----
-
-## Authentication
-
-The application uses JWT-based authentication for protected API operations.
-
-Different user roles can access different parts of the platform.
-
-### Demo Accounts
-
-#### Installer
-
-```text
-Email:    demo@installer.com
-Password: Installer@123
-```
-
-#### Admin
-
-```text
-Email:    admin@sunlead.com
-Password: Admin@123
-```
-
-> These credentials are provided for demonstration purposes.
-
----
-
-## Project Structure
+# 📁 Project Structure
 
 ```text
 Sollar_installer/
 │
 ├── app.py
+├── requirements.txt
+├── .gitignore
 │
 ├── static/
 │   └── index.html
 │
-├── instance/
-│   └── sunlead.db
-│
-├── requirements.txt
-│
-└── .gitignore
+└── instance/
+    └── sunlead.db
 ```
 
-The local SQLite database is intentionally excluded from version control.
+> `instance/` is excluded from version control because it contains the local SQLite database.
 
 ---
 
-## Running Locally
+# 🔐 Security & Engineering
 
-### 1. Clone the repository
+The application includes:
 
-```bash
-git clone https://github.com/jasminefloraa/Sollar_installer.git
-cd Sollar_installer
-```
-
-### 2. Create a virtual environment
-
-Windows:
-
-```bash
-python -m venv venv
-```
-
-Activate it:
-
-```bash
-venv\Scripts\activate
-```
-
-### 3. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Start the application
-
-```bash
-python app.py
-```
-
-The application will be available at:
-
-```text
-http://127.0.0.1:5000
-```
+* JWT-based authentication
+* Role-based access
+* Protected API endpoints
+* CORS configuration
+* Lead ownership and claim handling
+* Contact information protection
+* Server-side validation
+* SQLite database persistence
+* Real-time Socket.IO communication
 
 ---
 
-## Deployment
-
-The application is configured for deployment on Render.
-
-### Build Command
-
-```bash
-pip install -r requirements.txt
-```
-
-### Start Command
-
-```bash
-gunicorn --threads 100 app:app
-```
-
-The production server runs the Flask application through Gunicorn while supporting the application's Socket.IO configuration.
-
----
-
-## Example Lead
-
-A sample high-potential lead generated by the platform:
-
-| Attribute      | Value          |
-| -------------- | -------------- |
-| Lead ID        | SL-2026-000002 |
-| Location       | Dallas, TX     |
-| ZIP Code       | 75001          |
-| Potential      | High Potential |
-| Score          | 100            |
-| System Size    | 7.7 kW         |
-| Annual Savings | $2,160         |
-| Payback        | 7 years        |
-| CO₂ Reduction  | 4.2 t/year     |
-
----
-
-## Why This Project?
-
-Sollar Installer demonstrates practical full-stack development rather than being only a static interface.
-
-The project combines:
-
-* REST API development
-* Authentication
-* Database modeling
-* CRUD operations
-* Role-based workflows
-* Real-time communication
-* Business logic
-* Lead scoring
-* Dashboard development
-* Deployment
-* Git/GitHub workflow
-
----
-
-## Engineering Highlights
-
-### Full-Stack Architecture
-
-The application connects a browser-based dashboard with a Flask backend and relational data layer.
-
-### API-First Design
-
-Core functionality is exposed through structured REST endpoints, making the system easier to extend or integrate with external services.
-
-### Real-Time Communication
-
-Flask-SocketIO enables real-time events for notifications and application updates.
-
-### Role-Based Workflow
-
-The system separates homeowner, installer, and administrator workflows to reflect a realistic business platform.
-
-### Lead Lifecycle Management
-
-Leads move through a defined lifecycle:
-
-```text
-New
- ↓
-Available
- ↓
-Claimed
- ↓
-Contact Unlocked
- ↓
-Follow-up
- ↓
-Converted / Closed
-```
-
----
-
-## Future Improvements
-
-Potential future enhancements include:
+# 🌱 Future Improvements
 
 * PostgreSQL production database
-* Persistent cloud storage
-* Email automation
-* SMS notifications
-* Advanced lead scoring models
-* Installer matching based on location
-* Google Maps integration
-* Payment and subscription functionality
-* Advanced analytics
-* Automated follow-up campaigns
-* Production-grade authentication and security hardening
+* Advanced installer matching
+* Email/SMS notifications
+* Automated homeowner follow-ups
+* Solar API integrations
+* Installer subscription plans
+* Advanced lead analytics
+* CRM integrations
+* Production-grade secret management
+* Automated testing and CI/CD
 
 ---
 
-## Project Status
+# 📌 Project Status
 
-**Status:** Deployed / Deployment in Progress
+<div align="center">
 
-The application is actively being developed and prepared for production deployment.
+### 🟢 Core Application Complete
+
+**Homeowner → Lead → Installer → Claim → Contact → Status**
+
+<br>
+
+**Deployment:** Render
+**Repository:** GitHub
+**Backend:** Flask
+**Database:** SQLite
+**Real-Time:** Socket.IO
+
+</div>
 
 ---
 
-## Author
+# 👩‍💻 Developer
+
+<div align="center">
 
 ### Jasmine Flora J
 
-B.Tech Computer Science & Engineering
-Manakula Vinayagar Institute of Technology
+**B.Tech Computer Science & Engineering**
 
-GitHub:
-https://github.com/jasminefloraa
+Aspiring Software Developer
 
-LinkedIn:
-https://www.linkedin.com/in/jasmine-flora/
+<br>
+
+<a href="https://github.com/jasminefloraa">
+  <img src="https://img.shields.io/badge/GitHub-jasminefloraa-0B1426?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+
+<a href="https://www.linkedin.com/in/jasmine-flora/">
+  <img src="https://img.shields.io/badge/LinkedIn-Jasmine%20Flora-0B1426?style=for-the-badge&logo=linkedin&logoColor=22C55E"/>
+</a>
+
+</div>
 
 ---
 
 <div align="center">
 
-### Sollar Installer
+### ☀️ Turning Solar Interest Into Qualified Opportunities
 
-**Turning solar interest into qualified opportunities.**
-
-Built with Python, Flask, SQLAlchemy, JavaScript and Socket.IO.
+**Sollar Installer — Discover. Qualify. Connect.**
 
 </div>
